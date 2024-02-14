@@ -45,7 +45,7 @@ python main_train.py
 You can evaluate the model either from your own training or the available checkpoint <a href="https://drive.google.com/file/d/1eEhSLZhwd655M99fb-TqUT2qook4DQ7D/view?usp=sharing">here</a>. The downloaded checkpoint should be extracted and placed under `./models`, such that it has the structure `./models/usggen_<hyperparameters_list>`. 
 Please make sure to provide the correct experiment name in `--hyperparams_str`. The default value is pointing to the provided checkpoint.
 
-Note that the provided checkpoint does not exactly reproduce the official result in the paper. Also not that metric computation can vary, as it is computed on a random sample subset of the test set and generated set.
+Note that the provided checkpoint does not exactly reproduce the official result in the paper. Also note that metric computation can vary, as it is computed on a random sample subset of the test set and generated set.
 
 Run:
 ```
