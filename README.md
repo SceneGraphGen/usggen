@@ -2,6 +2,8 @@
 
 This is the implementation for the paper **Unconditional Scene Graph Generation**, ICCV 2021 | <a href="https://arxiv.org/pdf/2108.05884.pdf">arxiv</a>.
 
+This work was done at the Technical University of Munich.
+
 If you find this code useful in your research, please cite
 ```
 @inproceedings{scenegraphgen2021,
@@ -34,12 +36,14 @@ sudo apt-get install graphviz
 
 ## Training
 
-To train the model, first extract the <a href="https://drive.google.com/file/d/184TLc2NnTKeR-W0M_-8x5R9uUqs7SEDd/view?usp=sharing">custom_vg_dataset.zip</a> and place it under `.\data`.
+To train the model, first extract the <a href="https://drive.google.com/file/d/184TLc2NnTKeR-W0M_-8x5R9uUqs7SEDd/view?usp=sharing">custom_vg_dataset.zip</a> and place its content under `.\data`.
 
 Then run:
 ```
 python main_train.py
 ```
+
+You can define the prefix of the experiment folder in `--run_folder`. This prefix will be automatically appended with additional hyperparameter list information.
 
 ## Evaluation
 You can evaluate the model either from your own training or the available checkpoint <a href="https://drive.google.com/file/d/1eEhSLZhwd655M99fb-TqUT2qook4DQ7D/view?usp=sharing">here</a>. The downloaded checkpoint should be extracted and placed under `./models`, such that it has the structure `./models/usggen_<hyperparameters_list>`. 
